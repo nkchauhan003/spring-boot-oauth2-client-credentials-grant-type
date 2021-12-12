@@ -13,8 +13,6 @@ public class SecurityConfig {
         http
                 .authorizeRequests()
                 .antMatchers("/products-view/**").permitAll();
-
-
         return http.build();
     }
 }
